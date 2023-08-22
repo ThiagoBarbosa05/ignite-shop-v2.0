@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     //   return res.status(400).json({ error: 'Price not found.' });
     // }
 
-    const successUrl = `/success?session_id={CHECKOUT_SESSION_ID}`
+    const successUrl = `ignite-shop-v2-0-ten.vercel.app/success?session_id={CHECKOUT_SESSION_ID}`
     const cancelUrl = `${process.env.NEXT_URL}/`
 
 
@@ -27,3 +27,4 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         checkoutUrl: checkoutSession.url
     })
 }
+

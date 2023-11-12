@@ -12,16 +12,22 @@
 <p align="center">the remaining data is your choice.</p>
 
 <h1 align="center">
-  <img alt="banner ignite feed" title="#Ignite feed" src="./src/assets/cover.png" />
+  <img alt="banner ignite shop" title="#Ignite shop" src="./src/assets/cover.png" />
 </h1>
 
 ### 🛠 Technologies
 
 The following tools were used to build the project:
 
-- [React](https://react.dev/)
-- [Date-fns](https://date-fns.org/)
-- [Phosphor-react](https://phosphoricons.com/)
-- [Eslint](https://eslint.org/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [TypeScript](https://www.typescriptlang.org/) 
+- [Radix-ui](https://www.radix-ui.com/primitives) 
+- [Redux Toolkit](https://redux-toolkit.js.org/) 
+- [Stiches](https://stitches.dev/) 
+- [Axios](https://axios-http.com/ptbr/docs/intro) 
+- [Keen slider](https://keen-slider.io) 
+- [Lucidde React](https://lucide.dev) 
+- [Next.js](https://nextjs.org)
+- [next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper)
+- [react-redux](https://github.com/reduxjs/react-redux) 
+- [Stripe](https://github.com/stripe/stripe-node) 
 

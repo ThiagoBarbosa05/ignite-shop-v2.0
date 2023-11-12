@@ -7,9 +7,9 @@
 <p align="center">🚀Projeto desenvolvido como solucao do desafio da trilha Ignite React.js da Rocketseat, sobre fundamentos do Next.js.</p>
 
 ## Warnning
-<p align="center" color="#FF0000">To simulate the purchase via stripe, please use the following card number for simulation:</p>
-<p color="">4242 4242 4242 4242</p>
-<p>the remaining data is your choice.</p>
+<p align="center">To simulate the purchase via stripe, please use the following card number for simulation:</p>
+<p align="center">code: 4242 4242 4242 4242</p>
+<p align="center">the remaining data is your choice.</p>
 
 <h1 align="center">
   <img alt="banner ignite feed" title="#Ignite feed" src="./src/assets/cover.png" />

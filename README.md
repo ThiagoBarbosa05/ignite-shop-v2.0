@@ -8,7 +8,7 @@
 
 ## Warnning
 <p align="center">To simulate the purchase via stripe, please use the following card number for simulation:</p>
-<p align="center">code: 4242 4242 4242 4242</p>
+<p align="center">code: 4242 4242 4242 4242 💳💳💳💳💳💳💳💳💳</p>
 <p align="center">the remaining data is your choice.</p>
 
 <h1 align="center">

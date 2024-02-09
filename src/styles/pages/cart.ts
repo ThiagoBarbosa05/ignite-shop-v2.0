@@ -4,7 +4,7 @@ import { keyframes, styled } from "..";
 export const CartContainer = styled('div', {
     width: 480,
     background: '$gray800',
-    position: 'absolute',
+    position: 'fixed',
     top: 0,
     bottom: 0,
     right: 0,
@@ -12,8 +12,11 @@ export const CartContainer = styled('div', {
     paddingInline: '3rem',
     paddingBottom: '3rem',
     boxShadow: '-4px 0px 30px 0px rgba(0, 0, 0, 0.80)',
-    transition: '1s',
-    transform: 'translateX(0%)',
+    
+    "@md": { 
+        width: '100%',
+        paddingInline: "1rem",
+    },
 
     button: {
         lineHeight: 0,
@@ -38,6 +41,10 @@ export const CartContainer = styled('div', {
         right: 48,
         left: 48,
         bottom: 48,
+        "@md": { 
+            right: 16,
+            left: 16
+        },
 
         div: {
             display: 'flex',

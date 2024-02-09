@@ -37,7 +37,15 @@ export default function Home({ products }: HomeProps) {
   const [sliderRef, instanceRef] = useKeenSlider({
     slides: {
       perView: 2,
-      spacing: 48,
+      spacing: 24,
+    },
+    breakpoints: {
+      '(max-width: 640px)' : {
+        slides: {
+          perView: 1,
+          spacing: 16,
+        }
+      },
     },
     initial: 0,
     slideChanged(slider) {
@@ -56,6 +64,8 @@ export default function Home({ products }: HomeProps) {
     e.stopPropagation() || instanceRef.current?.prev();
   }
 
+  console.log(instanceRef.current?.size)
+
   return (
     <>
       <Head>
@@ -69,9 +79,8 @@ export default function Home({ products }: HomeProps) {
         {products.map((product) => (
           <Product key={product.id} className="keen-slider__slide">
               <Link  href={`/product/${product.id}`} prefetch={false} >
-              <Image src={product.imageUrl} width={520} height={480} alt="" />
-                 
-          </Link>
+                <Image src={product.imageUrl} width={520} height={480} alt="" />  
+              </Link>
           <footer>
                 <div>
                   <strong>{product.name}</strong>

@@ -2,7 +2,11 @@ import { styled } from "..";
 
 export const ProductContainer = styled('main', {
   display: 'grid',
-  gridTemplateColumns: '1fr 1fr',
+  gridTemplateColumns: '1fr',
+  "@lg": {
+      gridTemplateColumns: '1fr 1fr'
+  },
+  justifyItems: "center",
   alignItems: 'stretch',
   gap: '4rem',
   maxWidth: 1180,
@@ -13,6 +17,7 @@ export const ImageContainer = styled('div', {
   width: '100%',
   maxWidth: 576,
   height: 656,
+ 
   background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
   borderRadius: 8,
   padding: '0.25rem',
@@ -21,7 +26,9 @@ export const ImageContainer = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
 
+
   img: {
+    width: '100%', 
     objectFit: 'cover'
   }
 })
@@ -29,7 +36,6 @@ export const ImageContainer = styled('div', {
 export const ProductsDetails = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-
   h1: {
     fontSize: '$2xl',
     color: '$gray300'
@@ -44,6 +50,7 @@ export const ProductsDetails = styled('div', {
 
   p: {
     marginTop: '2.5rem',
+    marginBottom: "2rem",
     fontSize: '$md',
     color: '$gray300',
     lineHeight: 1.6

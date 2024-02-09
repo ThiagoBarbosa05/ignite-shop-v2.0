@@ -16,17 +16,19 @@ export const Product = styled("div", {
   flexDirection: 'column',
   alignItems: 'center',
   borderRadius: 8,
-
+  overflow: 'hidden',
+  '@md': {
+    paddingInline: "2rem"
+  },
   img: {
         objectFit: "cover",
       },
-
+  
   a: {
     height: "100%",
     width: '100%',
     display: 'flex',
     justifyContent: 'center',
-    
   },
 
   footer: {
@@ -41,10 +43,11 @@ export const Product = styled("div", {
     display: 'flex',
     justifyItems: 'space-between',
     alignItems: 'center',
-
-    transform: "translateY(110%)",
-    opacity: 0,
-    transition: "all 0.2s ease-in-out",
+    '@lg': {
+      transform: "translateY(110%)",
+      opacity: 0,
+      transition: "all 0.2s ease-in-out",
+    },
 
     strong: {
       fontSize: "$lg",
@@ -75,10 +78,13 @@ export const Product = styled("div", {
     },
   },
 
-  "&:hover": {
+  '@lg': {
+    "&:hover": {
     footer: {
       transform: "translateY(0%)",
       opacity: 1,
     },
   },
+  }
+  
 })

@@ -14,6 +14,7 @@ import { removeItemFromCart } from "@/features/cartSlice";
 import { useState } from "react";
 import axios from "axios";
 import { CartEmpty } from "./CartEmpty";
+import Link from "next/link";
 
 export function HeaderApp() {
 
@@ -52,7 +53,9 @@ export function HeaderApp() {
     return (
       <Dialog.Root>
            <Header>
+            <Link href='/'>
               <Image src={logoImg} alt="" />
+            </Link>
               <div>
                 <Dialog.Trigger asChild>
                   <button disabled={!itemsQuantity}>

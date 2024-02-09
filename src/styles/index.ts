@@ -10,6 +10,12 @@ export const {
   theme,
   createTheme,
 } = createStitches({
+  media: {
+    xl: '(max-width: 1250px)',
+    lg: '(min-width: 1024px)',
+    md: '(max-width: 640px)',
+
+  },
   theme: {
     colors: {
       white: "#FFF",
@@ -29,5 +35,6 @@ export const {
       xl: "1.5rem",
       "2xl": "2rem",
     },
+  
   },
 });
